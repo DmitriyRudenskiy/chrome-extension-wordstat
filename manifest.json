@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "v2",
+  "description": "v2",
+  "version": "5.1.2",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "https://wordstat.yandex.ru/*"
+    ],
+    "js": ["jquery-1.12.4.min.js", "wordstat.js", "main.js"]
+  }]
+}
